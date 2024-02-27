@@ -154,8 +154,9 @@ export default function Home() {
               <div>English (C2), Portuguese (native)</div>
             </div>
             <div>
-              <h3 className="font-semibold">Soft Skills - Mediation, Administration, Empathy</h3>
-              <div>I&apos;ve managed a small community online for about 4 years. I put on a weekly events and I ensure everyone gets along.</div>
+              <h3 className="font-semibold">Soft Skills</h3>
+              <div><span className="font-medium">Mediation, Administration, Empathy</span>: I&apos;ve managed a small online community online since 2019. I put on a weekly events and I ensure everyone gets along.</div>
+              <div><span className="font-medium">Time Management, Communication, Teamwork</span>: I worked at a beach bar for 3 summers (2016-19). I served cold drinks and ice cream, managed inventory, stocked shelves, cleaned, but most importantly I welcomed locals and tourists to the beach.</div>
             </div>
             <div>
               <h3 className="font-semibold">Main tech skills</h3>
@@ -187,11 +188,12 @@ export default function Home() {
       </div>
       <footer className="
         base-container mt-20 mb-20
-        flex flex-col gap-2 items-center
+        flex flex-col gap-1 items-center
         text-sm opacity-50
         print:my-4
       ">
         <div><span className="print:hidden">Last updated </span>{formatDateCustom(new Date())}</div>
+        <div className="print:hidden">Hire me!</div>
         {/* <div className="flex opacity-30"><IconAlien /><IconHeart /></div> */}
       </footer>
     </div>
