@@ -59,7 +59,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div id="education" className="break-after-all">
+        <div id="education">
           <h2 className="text-lg font-bold">Education</h2>
           <div className="flex flex-col gap-4 mt-4">
             <Education
@@ -86,7 +86,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div id="projects" className="">
+        <div id="projects">
           <h2 className="text-lg font-bold">Projects</h2>
           <div className="flex flex-col gap-2 mt-4">
             <Project
@@ -146,7 +146,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div id="skills" className="">
+        <div id="skills">
           <h2 className="text-lg font-bold">Skills</h2>
           <div className="flex flex-col gap-2 mt-4">
             <div>
@@ -155,7 +155,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold">Soft Skills</h3>
-              <div><span className="font-medium">Mediation, Administration, Empathy</span>: I&apos;ve managed a small online community online since 2019. I put on a weekly events and I ensure everyone gets along.</div>
+              <div><span className="font-medium">Mediation, Administration, Empathy</span>: I&apos;ve managed a small online community since 2019. I put on a weekly events and I ensure everyone gets along.</div>
               <div><span className="font-medium">Time Management, Communication, Teamwork</span>: I worked at a beach bar for 3 summers (2016-19). I served cold drinks and ice cream, managed inventory, stocked shelves, cleaned, but most importantly I welcomed locals and tourists to the beach.</div>
             </div>
             <div>
