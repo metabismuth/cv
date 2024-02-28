@@ -5,6 +5,8 @@ import WorkExperience from "./components/WorkExperience";
 import Education from "./components/Education";
 import Project from "./components/Project";
 
+const today = new Date();
+
 export default function Home() {
   return (
     <div className="
@@ -53,7 +55,7 @@ export default function Home() {
                   Earned <span
                     className="underline decoration-dotted cursor-help print:no-underline"
                     title="Associate Reactive Developer, Associate Traditional Web Developer, Mobile Developer Specialist"
-                  >three OutSystems certifications during my tenure</span>
+                  >three OutSystems certifications</span> during my tenure
                 </>
               ]}
             />
@@ -77,7 +79,7 @@ export default function Home() {
             <Education
               title="Cambridge English"
               subtitle="Cambridge English C2 Certification (Level 3 in ESOL International)"
-              date="Jun 2018"
+              date="Jul 2018"
             />
             <Education
               title="Colégio do Castanheiro"
@@ -88,7 +90,8 @@ export default function Home() {
         </div>
         <div id="projects">
           <h2 className="text-lg font-bold">Projects</h2>
-          <div className="flex flex-col gap-2 mt-4">
+          {/* <div className="flex flex-col gap-2 mt-4"> */}
+          <div className="grid grid-cols-2 gap-2 mt-4">
             <Project
               title="3D Relationship mapper"
               date="2021"
@@ -180,7 +183,7 @@ export default function Home() {
               <div><span className="font-medium">Databases</span>: SQL (MySQL, MariaDB), MongoDB</div>
               <div><span className="font-medium">Writing</span>: MS Office Excel, Word, etc., LibreOffice, Google Docs/Sheets/Slides, etc.</div>
               <div><span className="font-medium">OSes</span>: Windows, Linux (K/L/Ubuntu, Rpi), macOS Sierra</div>
-              <div><span className="font-medium">A/V</span>: VEGAS Pro, Paint.NET, Adobe Photoshop & Illustrator, Krita, Blender</div>
+              <div><span className="font-medium">A/V</span>: VEGAS Pro, Paint.NET, Adobe Photoshop & Illustrator, Krita, Blender, OBS Studio</div>
               {/* <div><span className="font-medium">Miscellaneous</span>: Firefox/Chrome Extensions</div> */}
             </div>
           </div>
@@ -192,7 +195,7 @@ export default function Home() {
         text-sm opacity-50
         print:my-4
       ">
-        <div><span className="print:hidden">Last updated </span>{formatDateCustom(new Date())}</div>
+        <div><span className="print:hidden">Last updated </span>{formatDateCustom(today)}</div>
         <div className="print:hidden">Hire me!</div>
         {/* <div className="flex opacity-30"><IconAlien /><IconHeart /></div> */}
       </footer>
