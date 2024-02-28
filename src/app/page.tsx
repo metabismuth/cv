@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { IconAlien, IconBrandLinkedin, IconHeart, IconMail, IconMapPin, IconPhone } from "@tabler/icons-react";
+import { formatDateCustom } from "./utils/formatDateCustom";
 import WorkExperience from "./components/WorkExperience";
 import Education from "./components/Education";
 import Project from "./components/Project";
-import { formatDateCustom } from "./utils/formatDateCustom";
 
 export default function Home() {
   return (
@@ -53,7 +53,7 @@ export default function Home() {
                   Earned <span
                     className="underline decoration-dotted cursor-help print:no-underline"
                     title="Associate Reactive Developer, Associate Traditional Web Developer, Mobile Developer Specialist"
-                  >three OutSystems certifications</span>
+                  >three OutSystems certifications during my tenure</span>
                 </>
               ]}
             />
@@ -107,7 +107,7 @@ export default function Home() {
             <Project
               title="Streamer website"
               date="2021"
-              description="I made a website for a streamer/musician to host links to their music and Twitch channel. fake ads and a button you can press that plays a funny sound and tracks how many times you've pressed it using browser storage."
+              description="I made a website for a streamer/musician to host links to their music and Twitch channel. It has procedurally placed fake ads and a button that plays a funny sound and tracks how many times you've pressed it using browser storage."
             />
             <Project
               title="Webcomic project"
