@@ -162,7 +162,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold">Main tech skills</h3>
-              <div>Next.js/React, Tailwind/SASS</div>
+              <div>Next.js, React, SASS, Tailwind</div>
             </div>
             <div>
               <h3 className="font-semibold">Proficiency with development tools</h3>
@@ -172,7 +172,9 @@ export default function Home() {
               <h3 className="font-semibold">Enthusiasm for web technologies</h3>
               <div><span className="font-medium">Foundational</span>: HTML/CSS, Javascript (ES3 - ES2024), Typescript, Node.js</div>
               <div><span className="font-medium">CSS Preprocessors</span>: SASS/SCSS, LESS</div>
-              <div><span className="font-medium">Libraries, frameworks</span>: Bootstrap, React, Vue, Angular, Lodash, Three.js, Moment.js, GSAP, Framer, Express.js, EJS</div>
+              <div><span className="font-medium">Package managers, bundlers</span>: npm, yarn, Webpack, Rollup</div>
+              <div><span className="font-medium">Frameworks</span>: Next.js, Vue, Angular, Svelte</div>
+              <div><span className="font-medium">Libraries</span>: Lodash, Three.js, Moment.js, GSAP, Framer, Express.js, EJS</div>
               <div><span className="font-medium">Miscellaneous</span>: XHTML, XML/XSLT, Opengraph/SEO, SVG</div>
             </div>
             <div>
