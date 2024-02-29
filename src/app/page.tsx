@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { IconAlien, IconBrandLinkedin, IconHeart, IconMail, IconMapPin, IconPhone } from "@tabler/icons-react";
-import { formatDateCustom } from "./utils/formatDateCustom";
-import WorkExperience from "./components/WorkExperience";
-import Education from "./components/Education";
-import Project from "./components/Project";
+import { IconBrandLinkedin, IconMail, IconMapPin, IconPhone } from "@tabler/icons-react";
+import { formatDateCustom } from "@/utils/formatDateCustom";
+import WorkExperience from "@/components/WorkExperience";
+import Education from "@/components/Education";
+import Project from "@/components/Project";
 
 const today = new Date();
 
