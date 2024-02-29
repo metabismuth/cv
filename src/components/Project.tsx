@@ -18,5 +18,5 @@ export default function Project({ title, date, description }: ProjectProps) {
         <div className="text-xs">{description}</div>
       }
     </div>
-  )
+  );
 }

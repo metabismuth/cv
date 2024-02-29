@@ -42,5 +42,5 @@ export default function Education({ title, subtitle, date, bullets, tags }: Educ
         </ul>
       }
     </div>
-  )
+  );
 }

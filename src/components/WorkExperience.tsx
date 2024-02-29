@@ -41,5 +41,5 @@ export default function WorkExperience({ title, company, date, companyDesc, comp
         }
       </ul>
     </div>
-  )
+  );
 }
