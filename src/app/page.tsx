@@ -90,7 +90,6 @@ export default function Home() {
         </div>
         <div id="projects">
           <h2 className="text-lg font-bold">Projects</h2>
-          {/* <div className="flex flex-col gap-2 mt-4"> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 mt-4">
             <Project
               title="3D Relationship mapper"
