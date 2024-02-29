@@ -197,7 +197,10 @@ export default function Home() {
       ">
         <div><span className="print:hidden">Last updated </span>{formatDateCustom(today)}</div>
         <div className="print:hidden">Hire me!</div>
-        {/* <div className="flex opacity-30"><IconAlien /><IconHeart /></div> */}
+        <div className="hidden print:block text-center">
+          An updated version of this document is available at<br />
+          <Link href={"https://metabismuth.github.io/cv"}>https://metabismuth.github.io/cv</Link>
+        </div>
       </footer>
     </div>
   );
