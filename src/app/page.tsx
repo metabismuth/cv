@@ -20,7 +20,7 @@ export default function Home() {
             <div className="flex gap-1"><IconMapPin /> Haarlem, NL</div>
             <div className="flex gap-1"><Link className="contents" href={"mailto:daniel.padez@gmail.com"}><IconMail /> daniel.padez@gmail.com</Link></div>
             <div className="flex gap-1"><Link className="contents" href={"tel:+31627131863/"}><IconPhone /> +31 627131863</Link></div>
-            <div className="flex gap-1"><Link className="contents" href={"https://www.linkedin.com/in/metabismuth/"}><IconBrandLinkedin /> LinkedIn</Link></div>
+            <div className="flex gap-1"><Link className="contents" href={"https://www.linkedin.com/in/metabismuth/"}><IconBrandLinkedin /> metabismuth</Link></div>
           </div>
         </div>
       </header>
