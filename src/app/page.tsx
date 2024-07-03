@@ -43,7 +43,7 @@ export default function Home() {
               companyTags={["B2B", "Scripting"]}
               techTags={["Python 2", "Python 3", "Javascript"]}
               bullets={[
-                "I write, rewrite, and maintain hundreds of web-scraping scripts",
+                "I create and maintain hundreds of web-scraping scripts",
                 "I also maintain a shared database cataloguing these scripts"
               ]}
             />
