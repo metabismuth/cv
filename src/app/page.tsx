@@ -28,7 +28,7 @@ export default function Home() {
         <div id="location">
           <h2 className="text-lg font-bold">Location</h2>
           <p>I currently live in the Netherlands.</p>
-          <p>I'm able to work in the EU, Canada, and the UK.</p>
+          <p>I&apos;m able to work in the EU, Canada, and the UK.</p>
         </div>
         <div id="work">
           <h2 className="text-lg font-bold">Work Experience</h2>
