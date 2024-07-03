@@ -4,6 +4,7 @@
     "quotes": ["warn", "double"],
     "comma-style": ["warn", "last"],
     "semi": ["warn", "always"],
-    "comma-dangle": ["warn", "never"]
+    "comma-dangle": ["warn", "never"],
+    "@next/next/no-img-element": "off"
   }
 }

@@ -25,12 +25,33 @@ export default function Home() {
         </div>
       </header>
       <div className="base-container flex flex-col gap-4 mt-4">
+        <div id="location">
+          <h2 className="text-lg font-bold">Location</h2>
+          <p>I currently live in the Netherlands.</p>
+          <p>I'm able to work in the EU, Canada, and the UK.</p>
+        </div>
         <div id="work">
           <h2 className="text-lg font-bold">Work Experience</h2>
           <div className="flex flex-col gap-4 mt-4">
             <WorkExperience
+              title="Software Engineer"
+              companyName="Textkernel"
+              companyLink="https://www.linkedin.com/company/textkernel/"
+              companyIcon="textkernel.jpg"
+              date="April 2024 - Present"
+              companyDesc="International recruitment & talent management company"
+              companyTags={["B2B", "Scripting"]}
+              techTags={["Python 2", "Python 3", "Javascript"]}
+              bullets={[
+                "I write, rewrite, and maintain hundreds of web-scraping scripts",
+                "I also maintain a shared database cataloguing these scripts"
+              ]}
+            />
+            <WorkExperience
               title="Web Developer"
-              company="Skrey"
+              companyName="Skrey"
+              companyLink="https://www.linkedin.com/company/skrey-software"
+              companyIcon="skrey.jpg"
               date="Jan 2023 - Feb 2024"
               companyDesc="eCommerce website development outfit"
               companyTags={["B2B", "eCommerce", "Frontend"]}
@@ -43,7 +64,9 @@ export default function Home() {
             />
             <WorkExperience
               title="OutSystems Developer"
-              company="Bool"
+              companyName="Bool"
+              companyLink="https://www.linkedin.com/company/bool/"
+              companyIcon="bool.jpg"
               date="Sep 2021 - Dec 2022"
               companyDesc="OutSystems consultancy based in Portugal"
               companyTags={["B2B", "Enterprise"]}
@@ -158,7 +181,7 @@ export default function Home() {
             <div>
               <h3 className="font-semibold">Soft Skills</h3>
               <div><span className="font-medium">Mediation, Administration, Empathy</span>: I&apos;ve managed a small online community since 2019. I put on weekly events and I ensure everyone gets along.</div>
-              <div><span className="font-medium">Time Management, Communication, Teamwork</span>: I worked at a beach bar for 3 summers (2016-19). I served cold drinks and ice cream, managed inventory, stocked shelves, cleaned, but most importantly I welcomed locals and tourists to the beach.</div>
+              <div><span className="font-medium">Time Management, Communication, Teamwork</span>: I worked at a beach bar for 3 summers (2016-19). I served cold drinks and ice cream, managed inventory, stocked shelves, cleaned, and finally welcomed locals and tourists to the beach.</div>
             </div>
             <div>
               <h3 className="font-semibold">Main tech skills</h3>
@@ -197,7 +220,9 @@ export default function Home() {
         print:my-4
       ">
         <div><span className="print:hidden">Last updated </span>{formatDateCustom(today)}</div>
-        <div className="print:hidden">Hire me!</div>
+        <div className="print:hidden">
+          <a href="mailto:daniel.padez@gmail.com">Hire me!</a>
+        </div>
         <div className="hidden print:block text-center">
           An updated version of this document is available at<br />
           <Link href={"https://metabismuth.github.io/cv"}>https://metabismuth.github.io/cv</Link>
