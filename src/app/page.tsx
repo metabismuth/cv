@@ -34,7 +34,7 @@ export default function Home() {
           <h2 className="text-lg font-bold">Work Experience</h2>
           <div className="flex flex-col gap-4 mt-4">
             <WorkExperience
-              title="Software Engineer"
+              title="Software Developer"
               companyName="Textkernel"
               companyLink="https://www.linkedin.com/company/textkernel/"
               companyIcon="textkernel.jpg"
