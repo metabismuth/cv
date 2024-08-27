@@ -35,7 +35,7 @@ export default function WorkExperience({
             <img
               src={`./assets/companyIcons/${companyIcon}`}
               alt={companyName}
-              className="inline-block h-4 my-auto"
+              className="inline-block print:hidden h-4 my-auto"
             />
             <h3 className="font-semibold">
               <span>{title}</span>
@@ -47,13 +47,16 @@ export default function WorkExperience({
         </div>
         <div className="flex justify-between flex-wrap">
           <div>
-            <div className="text-sm opacity-80">{companyDesc}</div>
-            {companyTags && <div className="text-sm opacity-50">{companyTags?.join(" • ")}</div>}
+            <div className="text-xs opacity-80">{companyDesc}</div>
+            {companyTags && <div className="text-xs opacity-50">{companyTags?.join(" • ")}</div>}
           </div>
           <div className="flex flex-wrap gap-2 justify-end">
             {
               techTags?.map((tech, i) => (
-                <div key={i}><Tag text={tech} /></div>
+                <div key={i} className="flex gap-2">
+                  {i !== 0 ? <span className="hidden print:block"> • </span> : <></>}
+                  <div><Tag text={tech} /></div>
+                </div>
               ))
             }
           </div>

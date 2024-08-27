@@ -39,8 +39,8 @@ export default function Home() {
               companyLink="https://www.linkedin.com/company/bullhorn/"
               companyIcon="bullhorn.jpg"
               date="April 2024 - Present"
-              companyDesc="International recruitment & talent management company"
-              companyTags={["B2B", "Scripting"]}
+              companyDesc="International cloud computing company specializing in staffing software"
+              companyTags={["B2B", "Scripting", "Data Mining"]}
               techTags={["Python 2/3", "HTML/CSS", "Javascript"]}
               bullets={[
                 "I create and maintain hundreds of web-scraping scripts",
@@ -53,7 +53,7 @@ export default function Home() {
               companyLink="https://www.linkedin.com/company/skrey-software"
               companyIcon="skrey.jpg"
               date="Jan 2023 - Feb 2024"
-              companyDesc="eCommerce website development outfit"
+              companyDesc="eCommerce/general website development company"
               companyTags={["B2B", "eCommerce", "Frontend"]}
               techTags={["Next.js", "Figma", "Tailwind", "Strapi"]}
               bullets={[
