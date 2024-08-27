@@ -28,20 +28,20 @@ export default function Home() {
         <div id="location">
           <h2 className="text-lg font-bold">Location</h2>
           <p>I currently live in the Netherlands.</p>
-          <p>I&apos;m able to work in the EU, Canada, and the UK.</p>
+          <p>I&apos;m able to work in the EU, Canada, and the UK. Relocation is possible.</p>
         </div>
         <div id="work">
           <h2 className="text-lg font-bold">Work Experience</h2>
           <div className="flex flex-col gap-4 mt-4">
             <WorkExperience
               title="Software Developer"
-              companyName="Textkernel"
-              companyLink="https://www.linkedin.com/company/textkernel/"
-              companyIcon="textkernel.jpg"
+              companyName="Bullhorn"
+              companyLink="https://www.linkedin.com/company/bullhorn/"
+              companyIcon="bullhorn.jpg"
               date="April 2024 - Present"
               companyDesc="International recruitment & talent management company"
               companyTags={["B2B", "Scripting"]}
-              techTags={["Python 2", "Python 3", "Javascript"]}
+              techTags={["Python 2/3", "HTML/CSS", "Javascript"]}
               bullets={[
                 "I create and maintain hundreds of web-scraping scripts",
                 "I also maintain a shared database cataloguing these scripts"
@@ -111,7 +111,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div id="projects">
+        {/* <div id="projects">
           <h2 className="text-lg font-bold">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 mt-4">
             <Project
@@ -170,7 +170,7 @@ export default function Home() {
               description="Participated in CanSat 2015 in the Azores. I was in charge of programming on Arduino."
             />
           </div>
-        </div>
+        </div> */}
         <div id="skills">
           <h2 className="text-lg font-bold">Skills</h2>
           <div className="flex flex-col gap-2 mt-4">
@@ -185,6 +185,8 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold">Main tech skills</h3>
+              <div>Python (2.x, 3.x), Bash</div>
+              <div>Typescript, Javascript</div>
               <div>Next.js, React, SASS, Tailwind</div>
             </div>
             <div>
@@ -206,9 +208,8 @@ export default function Home() {
               <div><span className="font-medium">Tools</span>: SSH, S/FTP, RegExp, Github Actions, Gitlab CI/CD, Apache2, Caddy, nginx, Github+Gitlab Pages, DNS, systemd, cron</div>
               <div><span className="font-medium">Databases</span>: SQL (MySQL, MariaDB), MongoDB</div>
               <div><span className="font-medium">Writing</span>: MS Office Excel, Word, etc., LibreOffice, Google Docs/Sheets/Slides, etc.</div>
-              <div><span className="font-medium">OSes</span>: Windows, Linux (K/L/Ubuntu, Rpi), macOS Sierra</div>
+              <div><span className="font-medium">OSes</span>: Windows, Linux (K/L/Ubuntu, Rpi), macOS</div>
               <div><span className="font-medium">A/V</span>: VEGAS Pro, Paint.NET, Adobe Photoshop & Illustrator, Krita, Blender, OBS Studio</div>
-              {/* <div><span className="font-medium">Miscellaneous</span>: Firefox/Chrome Extensions</div> */}
             </div>
           </div>
         </div>
