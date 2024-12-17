@@ -4,14 +4,15 @@ import Link from "next/link";
 
 export interface WorkExperienceProps {
   title: ReactNode;
-  date: ReactNode;
+  date?: ReactNode;
   companyName: string;
   companyLink: string;
   companyIcon: string;
-  companyDesc: ReactNode;
+  companyDesc?: ReactNode;
   companyTags?: ReactNode[];
   techTags?: ReactNode[];
-  bullets: ReactNode[];
+  bullets?: ReactNode[];
+  className?: string;
 }
 
 export default function WorkExperience({
@@ -23,11 +24,12 @@ export default function WorkExperience({
   companyDesc,
   companyTags,
   bullets,
-  techTags
+  techTags,
+  className
 }: WorkExperienceProps) {
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className={`flex flex-col gap-2 ${className ?? ""}`}>
       <div className="">
         <div className="flex justify-between flex-wrap">
           <div className="flex gap-2 align-center">
@@ -43,11 +45,11 @@ export default function WorkExperience({
               <Link href={companyLink} className="underline decoration-2">{companyName}</Link>
             </h3>
           </div>
-          <div className="opacity-50">{date}</div>
+          {date && <div className="opacity-50">{date}</div>}
         </div>
         <div className="flex justify-between flex-wrap">
           <div>
-            <div className="text-xs opacity-80">{companyDesc}</div>
+            {companyDesc && <div className="text-xs opacity-80">{companyDesc}</div>}
             {companyTags && <div className="text-xs opacity-50">{companyTags?.join(" • ")}</div>}
           </div>
           <div className="flex flex-wrap gap-2 justify-end">
@@ -64,7 +66,7 @@ export default function WorkExperience({
       </div>
       <ul className="ml-2 text-sm">
         {
-          bullets.map((bullet, i) => (
+          bullets?.map((bullet, i) => (
             <li key={i} className="list-item list-disc list-inside">{bullet}</li>
           ))
         }

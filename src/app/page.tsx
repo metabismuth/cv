@@ -35,13 +35,23 @@ export default function Home() {
           <div className="flex flex-col gap-4 mt-4">
             <WorkExperience
               title="Software Developer"
+              companyName="Bullhorn"
+              companyLink="https://www.linkedin.com/company/bullhorn/"
+              companyIcon="bullhorn.jpg"
+              date="April 2024 - Present"
+              companyTags={["B2B", "Scripting", "Data Mining"]}
+              techTags={["Python 2/3", "HTML/CSS", "Javascript", "Bash"]}
+              companyDesc="International cloud computing company specializing in staffing software"
+              bullets={[
+                "I continued the work I was doing at Textkernel after the acquisition by Bullhorn."
+              ]}
+              className="-mb-2"
+            />
+            <WorkExperience
+              title="Software Developer"
               companyName="Textkernel"
               companyLink="https://www.linkedin.com/company/textkernel/"
               companyIcon="textkernel.jpg"
-              date="April 2024 - Present"
-              companyDesc="International cloud computing company specializing in staffing software"
-              companyTags={["B2B", "Scripting", "Data Mining"]}
-              techTags={["Python 2/3", "HTML/CSS", "Javascript", "Bash"]}
               bullets={[
                 "I wrote, fixed, and maintained hundreds of web-scraping scripts",
                 "I also managed the shared database which served as a catalogue for these scripts",
