@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex gap-4 flex-wrap">
             <div className="flex gap-1"><IconMapPin /> Haarlem, NL</div>
             <div className="flex gap-1"><Link className="contents" href={"mailto:daniel.padez@gmail.com"}><IconMail /> daniel.padez@gmail.com</Link></div>
-            <div className="flex gap-1"><Link className="contents" href={"tel:+31627131863/"}><IconPhone /> +31 627131863</Link></div>
+            <div className="flex gap-1"><Link className="contents" href={"tel:+31627131863/"}><IconPhone /> +31 0627131863</Link></div>
             <div className="flex gap-1"><Link className="contents" href={"https://www.linkedin.com/in/metabismuth/"}><IconBrandLinkedin /> metabismuth</Link></div>
           </div>
         </div>
@@ -35,16 +35,32 @@ export default function Home() {
           <div className="flex flex-col gap-4 mt-4">
             <WorkExperience
               title="Software Developer"
-              companyName="Bullhorn"
-              companyLink="https://www.linkedin.com/company/bullhorn/"
-              companyIcon="bullhorn.jpg"
+              companyName="Textkernel"
+              companyLink="https://www.linkedin.com/company/textkernel/"
+              companyIcon="textkernel.jpg"
               date="April 2024 - Present"
               companyDesc="International cloud computing company specializing in staffing software"
               companyTags={["B2B", "Scripting", "Data Mining"]}
-              techTags={["Python 2/3", "HTML/CSS", "Javascript"]}
+              techTags={["Python 2/3", "HTML/CSS", "Javascript", "Bash"]}
               bullets={[
-                "I create and maintain hundreds of web-scraping scripts",
-                "I also maintain a shared database cataloguing these scripts"
+                "I wrote, fixed, and maintained hundreds of web-scraping scripts",
+                "I also managed the shared database which served as a catalogue for these scripts",
+                <>
+                  Textkernel was acquired by
+                  <a
+                    href="https://www.bullhorn.com/blog/bullhorn-acquires-textkernel-to-accelerate-its-ai-strategy/"
+                    target="_blank"
+                    className="inline-flex gap-1 px-1 align-bottom"
+                  >
+                    <img
+                      src={"./assets/companyIcons/bullhorn.jpg"}
+                      alt={"Bullhorn"}
+                      className="inline-block print:hidden h-4 my-auto"
+                    />
+                    Bullhorn
+                  </a>
+                  June 18th, 2024.
+                </>
               ]}
             />
             <WorkExperience
